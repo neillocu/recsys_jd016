@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neillocu-recsys_jd016"
+version = "0.1.0"
+description = "在同一个输入里两两比对，检测推荐系统算法工程师·合成数据的质量分水岭相关的矛盾表述，把冲突双方原样并排呈现"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "neillocu" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://neillocu.github.io"
+Repository = "https://github.com/neillocu/recsys_jd016"
+Issues = "https://github.com/neillocu/recsys_jd016/issues"
+
+[project.scripts]
+recsys_jd016 = "recsys_jd016:main"
+
+[tool.setuptools]
+py-modules = ["recsys_jd016"]
